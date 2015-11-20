@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+
+    tools:context=".MainActivity">
+
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="40dp"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Live Score"
+        android:gravity="center"
+        android:id="@+id/Titre"
+        android:background="@android:color/holo_red_dark"
+        android:textColor="@android:color/background_light"/>
+
+    <ListView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/ResultatListeView"
+        android:layout_below="@+id/Titre"
+        android:layout_alignLeft="@+id/Titre"
+        android:layout_alignStart="@+id/Titre"
+        android:layout_alignParentBottom="true" />
+</RelativeLayout>
